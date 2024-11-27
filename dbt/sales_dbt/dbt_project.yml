@@ -30,4 +30,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 # files using the `{{ config(...) }}` macro.
 models:
   sales_dbt:
-    +materialized: view  # Specify the default materialization for models if needed
+    staging:
+      +materialized: view  # Specify the default materialization for models if needed
+    marts:
+      +materialized: table
