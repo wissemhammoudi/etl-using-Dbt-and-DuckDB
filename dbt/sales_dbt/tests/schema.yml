@@ -1,6 +1,0 @@
-version: 2
-data_tests:
-  - name: assert_age_is_positive
-    description: >
-      Age cannot have a negative amount, so the total amount should always be >= 0.
-      Therefore return records where total amount < 0 to make the test fail.

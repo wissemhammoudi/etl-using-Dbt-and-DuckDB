@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Environments
+venv/
+.venv/
+env/
+.env
+.env.*
+myenv/
+
+# macOS
+.DS_Store
+
+# dbt
+dbt_packages/
+dbt_etl/target/
+dbt_etl/logs/
+dbt_etl/dev.duckdb
+
+# IDE/project
+.idea/
+.vscode/
+

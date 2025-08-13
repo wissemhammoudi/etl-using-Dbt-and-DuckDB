@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: dim_product
+    description: "Dimension table for product categories"
+    columns:
+      - name: product_key
+        description: "Unique identifier for each product"
+        tests:
+          - not_null  # Ensure product_key is not null
+          - unique  # Ensure product_key is unique
+
+      - name: category_id
+        description: "Unique identifier for each product category"
+        tests:
+          - not_null  # Ensure category_id is not null
+          - unique  # Ensure category_id is unique
+
+      - name: category_name
+        description: "Name of the product category"
+        tests:
+          - not_null  # Ensure category_name is not null

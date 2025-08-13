@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: dim_customer  
+    description: "Dimension table for customer information"
+    columns:
+      - name: customer_id
+        description: "Unique identifier for each customer"
+        tests:
+          - not_null  # Ensure customer_id is not null
+          - unique  # Ensure customer_id is unique
+      - name: gender
+        description: "Gender of the customer"
+        tests:
+          - not_null  # Ensure gender is not null
+          - accepted_values:
+              values: ['Male', 'Female'] 
+          
+      - name: age
+        description: "Age of the customer"
+        tests:
+          - not_null  # Ensure age is not null
+          

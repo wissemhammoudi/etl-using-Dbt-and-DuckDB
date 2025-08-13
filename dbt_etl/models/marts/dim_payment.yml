@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: dim_payment
+    description: "Dimension table for payment methods"
+    columns:
+      - name: payment_key
+        description: "Unique identifier for each payment method"
+        tests:
+          - not_null  # Ensure payment_key is not null
+          - unique  # Ensure payment_key is unique
+
+      - name: payment_method
+        description: "The type of payment method (e.g., Credit Card, Cash)"
+        tests:
+          - not_null  # Ensure payment_method is not null
+          - unique  # Ensure payment_method is unique
+          - accepted_values:
+              values: ['Credit Card', 'Cash', 'Debit Card']  # Add any new valid types
