@@ -108,4 +108,6 @@ See full details about the source data, staging logic, dimensions, fact model, a
 
 [`DATA_AND_TRANSFORMATIONS.md`](./DATA_AND_TRANSFORMATIONS.md)
 
+
+For more information, check out my [Medium post](https://medium.com/towardsdev/building-an-efficient-data-pipeline-setting-up-dbt-core-with-duckdb-ec8856bd14d2).
  
